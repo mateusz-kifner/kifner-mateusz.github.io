@@ -1,9 +1,9 @@
 ---
-layout: ../../layouts/project.astro
+layout: ../../layouts/article.astro
 title: Quiz App
 client: Self
 publishDate: 2019-10-02 00:00:00
-img: https://images.unsplash.com/photo-1547234935-80c7145ec969?fit=crop&w=1400&h=700&q=75
+img: http://mk.ssa.iq.pl/article_data/Quiz_App/thumbnail.png
 description: |
   Abstrakty na konferencję EWCOME2017 (East - West Conference on Mathematics Education) są już gotowe i zaakceptowane. Zachęcam do lektury.
 tags:
@@ -23,3 +23,7 @@ GitHub projektu:
 [Quiz (Node.js, Back-end)](https://github.com/kifner-mateusz/quiz-backend)
 
 ## Galeria:
+
+![](http://mk.ssa.iq.pl/article_data/Quiz_App/alpha01_small.png)
+![](http://mk.ssa.iq.pl/article_data/Quiz_App/alpha02_small.png)
+![](http://mk.ssa.iq.pl/article_data/Quiz_App/alpha03_small.png)

@@ -1,9 +1,9 @@
 ---
-layout: ../../layouts/project.astro
+layout: ../../layouts/article.astro
 title: EWCOME 2017 - abstrakty
 client: Self
 publishDate: 2017-07-22 00:00:00
-img: https://images.unsplash.com/photo-1547234935-80c7145ec969?fit=crop&w=1400&h=700&q=75
+img: http://mk.ssa.iq.pl/article_data/EWCOME2017/thumbnail.png
 description: |
   Abstrakty na konferencję EWCOME2017 (East - West Conference on Mathematics Education) są już gotowe i zaakceptowane. Zachęcam do lektury.
 tags:
