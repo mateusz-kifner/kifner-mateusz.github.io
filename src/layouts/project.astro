@@ -7,85 +7,204 @@ import Nav from "../components/Nav/index.jsx";
 const { content } = Astro.props;
 ---
 
-<html lang={content.lang || "en"}>
-	<head>
-		<MainHead title={content.title} description={content.description} />
-		<style lang="scss">
-			.hero {
-				padding: 8rem;
-				display: flex;
-				background-color: var(--t-fg);
-				background-repeat: no-repeat;
-				background-size: cover;
-				min-height: 25vw;
-				color: white;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
+<html lang={content.lang || "en" }>
+
+<head>
+	<MainHead title={content.title} description={content.description} />
+	<style lang="scss">
+		.hero {
+			padding: 8rem;
+			display: flex;
+			background-color: var(--t-fg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 25vw;
+			color: white;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.tag {
+			margin-left: 0.5em;
+			margin-right: 0.5em;
+			text-transform: uppercase;
+
+			&:nth-of-type(1n) {
+				color: var(--c-green);
 			}
 
-			.tag {
-				margin-left: 0.5em;
-				margin-right: 0.5em;
-				text-transform: uppercase;
-
-				&:nth-of-type(1n) {
-					color: var(--c-green);
-				}
-				&:nth-of-type(2n) {
-					color: var(--c-orange);
-				}
-				&:nth-of-type(3n) {
-					color: var(--c-blue);
-				}
-				&:nth-of-type(4n) {
-					color: var(--c-pink);
-				}
+			&:nth-of-type(2n) {
+				color: var(--c-orange);
 			}
 
-			.title {
-				font-size: var(--f-u10);
-				font-weight: 900;
-				text-transform: uppercase;
-				letter-spacing: 0.0625em;
+			&:nth-of-type(3n) {
+				color: var(--c-blue);
 			}
 
-			.leadIn {
-				color: var(--t-bg);
-				background-color: var(--t-fg);
+			&:nth-of-type(4n) {
+				color: var(--c-pink);
 			}
+		}
 
-			.tagline {
-				font-weight: 300;
-				font-size: var(--f-u3);
-				line-height: 1.5;
-			}
+		.title {
+			font-size: var(--f-u10);
+			font-weight: 900;
+			text-transform: uppercase;
+			letter-spacing: 0.0625em;
+		}
 
-			.content {
-				font-size: var(--f-u1);
-				line-height: 2.2;
-			}
-		</style>
-	</head>
-	<body>
-		<Nav />
-		<header style={`background-image:url(${content.img})`} class="hero">
-			<h1 class="title">{content.title}</h1>
-		</header>
-		<div class="leadIn">
-			<div class="wrapper pt8 pb8 mb8 tac">
-				{content.tags.map((t) => <span class="tag">{t}</span>)}
-				<h3 class="tagline">{content.description}</h3>
-			</div>
+		.leadIn {
+			color: var(--t-bg);
+			background-color: var(--t-fg);
+		}
+
+		.tagline {
+			font-weight: 300;
+			font-size: var(--f-u3);
+			line-height: 1.5;
+		}
+
+		.content {
+			font-size: var(--f-u1);
+			line-height: 2.2;
+		}
+
+
+		.play_iframe {
+			width: 100%;
+			height: 35.15625rem;
+			object-fit: cover;
+			background: rgba(0, 0, 0, 0.5);
+			border-radius: 0.625rem;
+			overflow: hidden;
+			position: relative;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		.play_iframe .svg_triangle {
+			width: 8rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.play_iframe span {
+			font-size: 2rem;
+			text-align: center;
+			width: 100%;
+			display: block;
+			margin-top: 28rem;
+		}
+
+		.play_iframe:hover span {
+			color: #999;
+		}
+
+		.play_iframe:hover .svg_triangle path {
+			fill: #7d4284;
+		}
+
+		.play_iframe iframe {
+			height: 100%;
+			width: 100%;
+			border: none;
+		}
+
+		.play_iframe span::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			z-index: -1;
+		}
+
+
+		.triangle {
+			position: absolute;
+			top: 3rem;
+			left: 3rem;
+		}
+
+		.triangle path {
+			transform: rotate(180deg);
+			transform-origin: 50% 50%;
+		}
+
+		.svg_triangle path {
+			fill: #002fea;
+		}
+
+		.svg_triangle path:hover,
+		.svg_triangle span:hover~svg path {
+			fill: #7d4284;
+		}
+
+		.triangle span {
+			position: absolute;
+			right: 1rem;
+			top: 50%;
+			transform: translate(0, -0.8rem);
+			color: #fff;
+			word-wrap: normal;
+			display: block;
+			line-height: 1.2;
+			font-size: 1.125rem;
+		}
+
+		.triangle svg {
+			width: 5.7735rem;
+			height: 6.66666rem;
+		}
+	</style>
+</head>
+
+<body>
+	<Nav />
+	<header style={`background-image:url(${content.img})`} class="hero">
+		<h1 class="title">{content.title}</h1>
+	</header>
+	<div class="leadIn">
+		<div class="wrapper pt8 pb8 mb8 tac">
+			{content.tags.map((t) => <span class="tag">{t}</span>)}
+			<h3 class="tagline">{content.description}</h3>
 		</div>
-		<div class="wrapper wrapper__readable">
-			<div class="content"><slot /></div>
+	</div>
+	<div class="wrapper wrapper__readable">
+		<div class="content">
+			<slot />
 		</div>
-		<footer class="tac mt6">
-			<a href="/projects">
-				<Button>View More</Button>
-			</a>
-		</footer>
-		<Footer />
-	</body>
+	</div>
+	<footer class="tac mt6">
+		<a href="/projects">
+			<Button>View More</Button>
+		</a>
+	</footer>
+	<Footer />
+</body>
+
 </html>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		var iframe_containers = Array.from(document.getElementsByClassName('play_iframe') as HTMLCollectionOf<HTMLElement>)
+		for (let iframe of iframe_containers) {
+			iframe.addEventListener('click', (e) => { load_iframe(e) });
+			iframe.style.backgroundImage = "url(\'" + iframe.dataset.img + "\')";
+			var new_message = document.createElement('span');
+			new_message.innerText = iframe.dataset.message
+			iframe.appendChild(new_message);
+		}
+	});
+
+	function load_iframe(e) {
+		console.log(e.currentTarget);
+		var url = e.currentTarget.dataset.src
+		e.currentTarget.innerHTML = "<iframe src=\"" + url + "\"></iframe>";
+	}
+</script>

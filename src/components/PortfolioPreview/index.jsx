@@ -1,8 +1,8 @@
 import { h } from 'preact';
 import Styles from './styles.module.scss';
 
-function PortfolioPreview({ project }) {
-	const { frontmatter } = project;
+function PortfolioPreview({ article }) {
+	const { frontmatter } = article;
 	return (
 		<div className={Styles.card}>
 			<div className={Styles.titleCard} style={`background-image:url(${frontmatter.img})`}>
@@ -18,7 +18,7 @@ function PortfolioPreview({ project }) {
 						</div>
 					))}
 				</div>
-				<a className={Styles.link} href={project.url}>
+				<a className={Styles.link} href={article.url}>
 					<span className={Styles.linkInner}>View</span>
 				</a>
 			</div>
