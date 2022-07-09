@@ -1,10 +1,10 @@
 ---
 // Component Imports
 import MainHead from "../components/MainHead.astro";
-import Button from "../components/Button/index.jsx";
-import Nav from "../components/Nav/index.jsx";
-import Footer from "../components/Footer/index.jsx";
-import PortfolioPreview from "../components/PortfolioPreview/index.jsx";
+import Button from "../components/Button/index";
+import Nav from "../components/Nav/index";
+import Footer from "../components/Footer/index";
+import PortfolioPreview from "../components/PortfolioPreview/index";
 
 // Data Fetching: List all Markdown posts in the repo.
 const articles = (await Astro.glob("./articles/**/*.md"))
@@ -22,6 +22,7 @@ const featuredProject = articles[0];
 <html lang="en">
 
 <head>
+	<MainHead />
 
 </head>
 
