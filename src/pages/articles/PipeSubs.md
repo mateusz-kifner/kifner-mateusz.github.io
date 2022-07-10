@@ -3,7 +3,7 @@ layout: ../../layouts/article.astro
 title: PipeSubs - Aplikacja Python
 client: Self
 publishDate: 2022-03-20 00:00:00
-img: http://mk.ssa.iq.pl/article_data/EWCOME2017/thumbnail.png
+img: /assets/PipeSubs.png
 description: |
   Feed group manager for NewPipe.
 tags:
@@ -15,7 +15,7 @@ tags:
 # PipeSubs
 
 Feed group manager for NewPipe.
-![Subs](.github/PipeSubs.png)
+![Subs](/assets/PipeSubs.png)
 
 ### binaries can be found [here](https://github.com/kifner-mateusz/PipeSubs/releases)
 
@@ -39,5 +39,5 @@ Feed group manager for NewPipe.
 - Send it to Phone
 - Import database (Settings > Content > Import database)
 
-![Subs](.github/PipeSubs2.png)
-![Subs](.github/PipeSubs3.png)
+![Subs](/assets/PipeSubs2.png)
+![Subs](/assets/PipeSubs3.png)
