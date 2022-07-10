@@ -1,11 +1,4 @@
-// import Styles from './styles.module.scss';
-
 function Footer() {
-	return (
-		<footer>
-			&copy; {new Date().getFullYear()} Jeanine White
-			<small >🚀 Built by Astro</small>
-		</footer>
-	);
+  return <footer>&copy; {new Date().getFullYear()} Mateusz Kifner</footer>
 }
-export default Footer;
+export default Footer
