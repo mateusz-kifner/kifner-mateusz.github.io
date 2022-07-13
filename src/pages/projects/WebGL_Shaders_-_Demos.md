@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/article.astro
+layout: ../../layouts/project.astro
 title: WebGL Shaders - Demos
 client: Self
 publishDate: 2019-11-11 00:00:00

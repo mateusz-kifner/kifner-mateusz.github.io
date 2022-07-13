@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/article.astro
+layout: ../../layouts/project.astro
 title: Godot demos 1 - Golf
 client: Self
 publishDate: 2019-09-13 00:00:00

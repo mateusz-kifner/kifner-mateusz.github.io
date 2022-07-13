@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/article.astro
+layout: ../../layouts/project.astro
 title: Crystallis - Game
 client: Self
 publishDate: 2020-04-19 00:00:00
@@ -55,7 +55,7 @@ Things made by us:
 -All other things I forgot
 
 Things we gladly took from generous creators:
--Particle Texture (made by Kenney: https://www.kenney.nl/ )
+-Pproject Texture (made by Kenney: https://www.kenney.nl/ )
 -Font (Special Elite from Google Fonts)
 
 Things we wanted to add, but didn't have the time to:

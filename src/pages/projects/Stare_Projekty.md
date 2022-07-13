@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/article.astro
+layout: ../../layouts/project.astro
 title: Flappy Fish
 client: Self
 publishDate: 2019-06-11 00:00:00

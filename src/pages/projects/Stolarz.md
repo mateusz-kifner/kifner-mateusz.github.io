@@ -1,9 +1,9 @@
 ---
-layout: ../../layouts/article.astro
+layout: ../../layouts/project.astro
 title: Stolarz - projekt React
 client: Self
 publishDate: 2020-10-29 00:00:00
-img: http://mk.ssa.iq.pl/article_data/EWCOME2017/thumbnail.png
+img: /assets/Stolarz2.png
 description: |
   MVP web aplikacji dla stolarza do zleceń, listy zakupów i podliczania finansów.
 tags:

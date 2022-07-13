@@ -1,0 +1,37 @@
+---
+import Nav from "./Nav/index"
+import Button from "./Button/index"
+---
+
+<header class="bg-dark-grad w-screen h-screen relative z-10 ">
+  <div class="absolute w-screen h-screen overflow-x-hidden overflow-y-hidden -z-10">
+    <img src=" /assets/Blob_bottom_right.svg" alt="" class="absolute xl:block hidden"
+      style="right:0;bottom: 0; transform:translate( 40% , 80%); filter: drop-shadow(0 0 5rem #5c6bc055);" />
+    <img src="/assets/Blob_top_right.svg" alt="" class="absolute"
+      style="right:0;top: 0;transform:translate( 0% , -30%);filter: drop-shadow(0 0 5rem #5c6bc055);" />
+    <img src="/assets/Blob_bottom_left.svg" alt="" class="absolute"
+      style="left:0;bottom: 0; transform:translate( -30% , 80%);filter: drop-shadow(0 0 5rem #5c6bc055);" />
+  </div>
+  <Nav client:load />
+  <div
+    class="xl:max-w-screen-xl w-full max-w-none flex flex-col-reverse xl:flex-row  absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center p-16 gap-32">
+    <div class="flex-grow flex flex-col xl:justify-start xl:items-start justify-center items-center">
+      <h1 class="font-josefin-sans xl:text-8xl font-bold text-4xl">
+        Mateusz Kifner
+      </h1>
+      <div class="p-2 pb-8 font-open-sans xl:text-xl text-md">
+        Programista - Web designer - Grafik 3D
+      </div>
+      <a href="/projects"><span
+          class="px-5 py-2 border-solid border-4 rounded-sm font-open-sans text-xl text-brand-purple font-bold self-start xl:ml-2 border-brand-purple hover:text-brand-blue hover:border-brand-blue transition-all   before:content-['>'] after:content-['<'] before:mr-2 after:ml-2 hover:before:translate-x-2 before:inline-block hover:after:-translate-x-2 after:inline-block">
+          Moje
+          projekty
+        </span>
+      </a>
+    </div>
+    <img src="/assets/mk_bwm_small.jpg" alt="" class="rounded-full xl:w-96 xl:h-96 md:w-80 md:h-80 w-60 h-60"
+      style="filter: drop-shadow(0 0 5rem #5c6bc055);" />
+  </div>
+
+
+</header>

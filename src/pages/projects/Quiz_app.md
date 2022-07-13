@@ -1,9 +1,9 @@
 ---
-layout: ../../layouts/article.astro
+layout: ../../layouts/project.astro
 title: Quiz App
 client: Self
 publishDate: 2019-10-02 00:00:00
-img: http://mk.ssa.iq.pl/article_data/Quiz_App/thumbnail.png
+img: http://mk.ssa.iq.pl/article_data/Quiz_App/alpha01_small.png
 description: |
   Abstrakty na konferencję EWCOME2017 (East - West Conference on Mathematics Education) są już gotowe i zaakceptowane. Zachęcam do lektury.
 tags:

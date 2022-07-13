@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-dark-grad {
+  background: linear-gradient(240deg, #000000 20%, #0E1225 80%);
+}
+
+h1 {
+  @apply text-4xl
+}
+
+h2 {
+  @apply text-3xl
+}
+
+h3 {
+  @apply text-2xl
+}
+
+h4 {
+  @apply text-xl
+}
+
+h5 {
+  @apply text-xl font-bold
+}
+
+h6 {
+  @apply text-xl
+}
+
+.astro-code {
+  @apply p-4 rounded-sm
+}
+
+a:link,a:visited {
+  /* color: #AB47BC; */
+  @apply text-brand-purple
+}
+
+ol,
+ul {
+  list-style: initial !important;
+  margin: 0;
+  padding-left: 2rem;
+}

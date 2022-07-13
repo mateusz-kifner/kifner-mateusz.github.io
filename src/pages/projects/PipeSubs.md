@@ -1,6 +1,6 @@
 ---
-layout: ../../layouts/article.astro
-title: PipeSubs - Aplikacja Python
+layout: ../../layouts/project.astro
+title: PipeSubs - aplikacja Python
 client: Self
 publishDate: 2022-03-20 00:00:00
 img: /assets/PipeSubs.png

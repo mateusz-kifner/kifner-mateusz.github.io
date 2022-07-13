@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/article.astro
+layout: ../../layouts/project.astro
 title: EWCOME 2017 - abstrakty
 client: Self
 publishDate: 2017-07-22 00:00:00

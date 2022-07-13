@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/article.astro
+layout: ../../layouts/project.astro
 title: EWCOME 2017 Geo-Pac, czyli jak tworzyć gry w GeoGebrze. - materiały
 client: Self
 publishDate: 2017-07-24 00:00:00

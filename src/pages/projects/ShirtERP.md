@@ -1,11 +1,11 @@
 ---
-layout: ../../layouts/article.astro
-title: ShirtERP - WebApp
+layout: ../../layouts/project.astro
+title: ShirtERP - webapp
 client: Self
 publishDate: 2021-12-29 00:00:00
-img: /assets/ShirtERP_logo.png
+img: /assets/ShirtERP2.png
 description: |
-  System zarządzania zleceniami dla drukarni koszulek
+  System zarządzania zleceniami dla drukarni koszulek, wykorzystywany przez firmę Wentaprint w Gdańsku.
 tags:
   - React
   - Mantine

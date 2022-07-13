@@ -3,35 +3,38 @@ import MainHead from "../components/MainHead.astro";
 import Button from "../components/Button/index";
 import Footer from "../components/Footer/index";
 import Nav from "../components/Nav/index";
+import '../styles/global.css'
 
 const { content } = Astro.props;
 ---
 
-<html lang={content.lang || "en" }>
+<html lang={content.lang || "pl" } class="w-screen h-screen overflow-hidden dark">
 
 <head>
 	<MainHead title={content.title} description={content.description} />
-
 </head>
 
-<body>
-	<Nav />
-	<header style={`background-image:url(${content.img})`} class="hero">
-		<h1 class="title">{content.title}</h1>
-	</header>
-	<div class="leadIn">
-		<div class="wrapper pt8 pb8 mb8 tac">
-			{content.tags.map((t) => <span class="tag">{t}</span>)}
-			<h3 class="tagline">{content.description}</h3>
+<body class="dark:bg-gray-900 dark:text-white overflow-x-hidden overflow-y-scroll h-screen  snap-proximity snap-y">
+	<Nav client:load />
+	<article class="2xl:max-w-screen-2xl 2xl:mx-auto bg-gray-800 rounded-sm mx-4">
+		<header style={`background-image:url(${content.img}) ; background-repeat: no-repeat;background-size: cover;`}
+			class="h-44 w-full flex flex-col justify-end items-center">
+			<h1 class="text-4xl bg-brand-blue inline p-4 rounded-sm ">{content.title}</h1>
+		</header>
+		<div class="p-8">
+			<div class=" pt-8 pb-8 mb-8 ">
+				<div class="flex flex-wrap gap-2 ">
+					{content.tags.map((t) => <span class="border-white border-2 border-solid  py-1 px-3 rounded-sm">{t}</span>)}
+				</div>
+				<h3>{content.description}</h3>
+			</div>
 		</div>
-	</div>
-	<div class="wrapper wrapper__readable">
-		<div class="content">
+		<div class="p-8">
 			<slot />
 		</div>
-	</div>
-	<footer class="tac mt6">
-		<!-- <a href="/articles">
+	</article>
+	<footer class="tac mt-6">
+		<!-- <a href="/projects">
 			<Button>View More</Button>
 		</a> -->
 	</footer>
