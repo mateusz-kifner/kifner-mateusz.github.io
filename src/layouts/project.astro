@@ -12,11 +12,17 @@ const { content } = Astro.props;
 
 <head>
 	<MainHead title={content.title} description={content.description} />
+	<style>
+		.image :global(img) {
+			max-height: 50vmin !important;
+
+		}
+	</style>
 </head>
 
 <body class="dark:bg-gray-900 dark:text-white overflow-x-hidden overflow-y-scroll h-screen  snap-proximity snap-y">
 	<Nav client:load />
-	<article class="2xl:max-w-screen-2xl 2xl:mx-auto bg-gray-800 rounded-sm mx-4">
+	<article class="xl:max-w-screen-xl xl:mx-auto bg-gray-800 rounded-sm mx-4">
 		<header style={`background-image:url(${content.img}) ; background-repeat: no-repeat;background-size: cover;`}
 			class="h-44 w-full flex flex-col justify-end items-center">
 			<h1 class="text-4xl bg-brand-blue inline p-4 rounded-sm ">{content.title}</h1>
@@ -30,7 +36,7 @@ const { content } = Astro.props;
 				<h3>{content.description}</h3>
 			</div>
 		</div>
-		<div class="p-8">
+		<div class="p-8 prose lg:prose-xl dark:prose-invert image">
 			<slot />
 		</div>
 	</article>

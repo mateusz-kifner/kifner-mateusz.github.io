@@ -18,3 +18,8 @@ tags:
 Live na GitHub:[https://kifner-mateusz.github.io/stolarz](https://kifner-mateusz.github.io/stolarz)
 
 Dane testowe mozna dodać w ustawieniach
+
+Galeria:
+
+![](/assets/Stolarz2.png)
+![](/assets/Stolarz.png)

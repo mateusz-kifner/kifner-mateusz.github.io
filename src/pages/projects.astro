@@ -20,7 +20,7 @@ const projects = (await Astro.glob("./projects/**/*.md"))
 
 <body class="dark:bg-gray-900 dark:text-white overflow-x-hidden overflow-y-scroll h-screen  snap-proximity snap-y">
 	<Nav client:load />
-	<div class="2xl:max-w-screen-2xl 2xl:mx-auto xl:mx-16 mx-4">
+	<div class="xl:max-w-screen-xl xl:mx-auto md:mx-16 mx-4">
 		<h1 class="title mt-4 mb-16 text-3xl font-bold">Projekty</h1>
 		<div class="flex gap-16 flex-col">
 			{projects.map((project) =>

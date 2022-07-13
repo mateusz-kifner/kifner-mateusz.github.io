@@ -3,7 +3,7 @@ layout: ../../layouts/project.astro
 title: Quiz App
 client: Self
 publishDate: 2019-10-02 00:00:00
-img: http://mk.ssa.iq.pl/article_data/Quiz_App/alpha01_small.png
+img: /assets/quizapp_alpha01.png
 description: |
   Abstrakty na konferencję EWCOME2017 (East - West Conference on Mathematics Education) są już gotowe i zaakceptowane. Zachęcam do lektury.
 tags:
@@ -24,6 +24,6 @@ GitHub projektu:
 
 ## Galeria:
 
-![](http://mk.ssa.iq.pl/article_data/Quiz_App/alpha01_small.png)
-![](http://mk.ssa.iq.pl/article_data/Quiz_App/alpha02_small.png)
-![](http://mk.ssa.iq.pl/article_data/Quiz_App/alpha03_small.png)
+![](/assets/quizapp_alpha01.png)
+![](/assets/quizapp_alpha02.png)
+![](/assets/quizapp_alpha03.png)

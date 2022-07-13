@@ -6,7 +6,7 @@
   background: linear-gradient(240deg, #000000 20%, #0E1225 80%);
 }
 
-h1 {
+/* h1 {
   @apply text-4xl
 }
 
@@ -35,7 +35,7 @@ h6 {
 }
 
 a:link,a:visited {
-  /* color: #AB47BC; */
+
   @apply text-brand-purple
 }
 
@@ -44,4 +44,4 @@ ul {
   list-style: initial !important;
   margin: 0;
   padding-left: 2rem;
-}
+} */
