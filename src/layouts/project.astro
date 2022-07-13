@@ -24,7 +24,8 @@ const { content } = Astro.props;
 		<div class="p-8">
 			<div class=" pt-8 pb-8 mb-8 ">
 				<div class="flex flex-wrap gap-2 ">
-					{content.tags.map((t) => <span class="border-white border-2 border-solid  py-1 px-3 rounded-sm">{t}</span>)}
+					{content.tags.filter((val) => val && val.length >0).map((t) => <span
+						class="border-white border-2 border-solid  py-1 px-3 rounded-sm">{t}</span>)}
 				</div>
 				<h3>{content.description}</h3>
 			</div>
