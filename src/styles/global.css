@@ -45,3 +45,28 @@ ul {
   margin: 0;
   padding-left: 2rem;
 } */
+
+.play_iframe {
+  @apply relative w-full aspect-video bg-cover rounded-sm ;
+  min-height: 720px;
+  min-width: 1280px;
+  margin-left: -32px;
+
+}
+
+.play_iframe .svg_triangle {
+  @apply fill-brand-blue h-32 w-32 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+}
+
+.play_iframe span {
+  @apply text-white bg-brand-blue p-4 absolute bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap
+
+}
+
+img {
+  @apply rounded-sm
+}
+
+.play_iframe iframe {
+  @apply h-full w-full
+}
