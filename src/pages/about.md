@@ -10,5 +10,7 @@ tags:
   -
 ---
 
+Hej
+
 <!--
 Hello, My name is Mateusz Kifner. I am passionate about new technologies and computer games. While studying at university, I developed interest in building modern web applications, because of that I decided to focus on becoming a Front-end Developer. -->

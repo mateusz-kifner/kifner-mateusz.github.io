@@ -22,9 +22,9 @@ const Nav = () => {
         <a href="/projects">
           <span class="text-white hover:text-gray-300">Projekty</span>
         </a>
-        <a href="/about">
+        {/* <a href="/about">
           <span class="text-white hover:text-gray-300">O mnie</span>
-        </a>
+        </a> */}
       </nav>
     </div>
   )
