@@ -17,7 +17,7 @@ tags:
 Feed group manager for NewPipe.
 ![Subs](/assets/PipeSubs.png)
 
-### binaries can be found [here](https://github.com/kifner-mateusz/PipeSubs/releases)
+### binaries can be found [here](https://github.com/mateusz-kifner/PipeSubs/releases)
 
 ### manual installation
 

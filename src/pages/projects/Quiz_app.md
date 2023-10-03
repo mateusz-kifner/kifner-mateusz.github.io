@@ -19,8 +19,8 @@ W ramach ćwiczeń z technologii webowych postanowiłem zrobić aplikację do qu
 
 GitHub projektu:
 
-[Quiz (React.js, Front-end)](https://github.com/kifner-mateusz/quiz)
-[Quiz (Node.js, Back-end)](https://github.com/kifner-mateusz/quiz-backend)
+[Quiz (React.js, Front-end)](https://github.com/mateusz-kifner/quiz)
+[Quiz (Node.js, Back-end)](https://github.com/mateusz-kifner/quiz-backend)
 
 ## Galeria:
 
