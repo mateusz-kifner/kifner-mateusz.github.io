@@ -1,13 +1,13 @@
 import { defineConfig } from "astro/config"
 import mdx from "@astrojs/mdx"
-import preact from "@astrojs/preact"
 
+import react from "@astrojs/react"
 import sitemap from "@astrojs/sitemap"
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://mateusz-kifner.github.io",
-  integrations: [mdx(), sitemap(), preact()],
+  integrations: [mdx(), sitemap(), react()],
   server: {
     tailwindConfig: "./tailwind.config.js",
   },
