@@ -30,7 +30,7 @@ const Nav = () => {
         </a> 
       </nav>*/}
       <a
-        href="https://github.com/kifner-mateusz"
+        href="https://github.com/mateusz-kifner"
         class="flex  hover:text-gray-300 fill-white hover:fill-gray-300 gap-2 font-josefin-sans text-2xl font-bold items-center"
       >
         <svg
